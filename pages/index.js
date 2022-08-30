@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import SearchFrom from '../components/seachForm'
 import Header from '../components/header';
-import Cards from '../components/cards';
 import { MetaMaskProvider } from 'metamask-react';
 
 export default function Home() {
@@ -23,8 +21,10 @@ export default function Home() {
       </MetaMaskProvider>
 
       <main className={styles.main}>
-        <SearchFrom />
-        {/* <Cards style={styles} /> */}
+        <div className={styles.card}>
+          <SearchFrom />
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
@@ -34,9 +34,6 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           @copyright Powered by Ayden Lee
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
         </a>
       </footer>
     </div>
