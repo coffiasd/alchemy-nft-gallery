@@ -26,9 +26,9 @@ export default function App({ nfts }) {
         <MDBContainer>
             <MDBRow>
                 {
-                    nfts ? nfts.map(nft => {
+                    nfts ? nfts.map((nft, index) => {
                         return (
-                            <MDBCol md='3'>
+                            <MDBCol md='3' key={index}>
                                 <MDBCard alignment='center'>
                                     <MDBCardImage src={nft.media[0].raw} position='top' alt='...' />
                                     <MDBCardBody>

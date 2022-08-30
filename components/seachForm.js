@@ -71,7 +71,7 @@ export default function App() {
                     if (fetchForCollection) {
                         fetchNFTsForCollection()
                     } else fetchNFTs()
-                }}> Let's Go </MDBBtn></div> : ""}
+                }}>Lets Go</MDBBtn></div> : ""}
 
 
                 {OnLoading ? <div className='p-2'>
@@ -81,12 +81,6 @@ export default function App() {
                     </MDBBtn>
                 </div> : ""}
 
-
-                {/* <div className="p-2">
-                    <MDBSpinner role='status' color='primary'>
-                        <span className='visually-hidden'>Loading...</span>
-                    </MDBSpinner>
-                </div> */}
             </div>
 
             {
